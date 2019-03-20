@@ -37,7 +37,7 @@ export default class HomeScreen extends Component {
                 });
               }}
             >
-              <Image source={Images.tv} style={styles.icon} />
+              <Image source={item.img} style={styles.icon} />
               <Text>{item.name}</Text>
             </TouchableOpacity>
           )}

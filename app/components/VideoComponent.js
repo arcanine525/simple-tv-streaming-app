@@ -10,7 +10,7 @@ export default class VideoComponent extends React.Component {
     return (
       <Video
         source={{ uri: this.props.url }}
-        style={{ width: width, height: height }}
+        style={{ width: width, height: height, position: 'absolute' }}
         //style={{ flex : 1}}
         muted={false}
         repeat={true}
