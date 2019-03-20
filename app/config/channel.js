@@ -67,52 +67,52 @@ const channels = [
   },
   {
     name: "HTV1",
-    img: require("../../assets/img/htv1.png"),
+    img: require("../../assets/img/htv1.jpg"),
     url:
       "http://live.cdn.mobifonetv.vn/motv/myhtv1_hls.smil/chunklist_b1200000.m3u8"
   },
   {
     name: "HTV2",
-    img: require("../../assets/img/htv2.png"),
+    img: require("../../assets/img/htv2.jpg"),
     url:
       "http://live.cdn.mobifonetv.vn/motv/myhtv2_hls.smil/chunklist_b1200000.m3u8"
   },
   {
     name: "HTV3",
-    img: require("../../assets/img/htv3.png"),
+    img: require("../../assets/img/htv3.jpg"),
     url:
       "http://live.cdn.mobifonetv.vn/motv/myhtv3_hls.smil/chunklist_b1200000.m3u8"
   },
   {
     name: "HTV4",
-    img: require("../../assets/img/vtv3.png"),
+    img: require("../../assets/img/htv4.jpg"),
     url:
       "http://live.cdn.mobifonetv.vn/motv/myhtv4_hls.smil/chunklist_b1200000.m3u8"
   },
   {
     name: "HTV Thể Thao",
-    img: require("../../assets/img/vtv3.png"),
+    img: require("../../assets/img/htvthethao.jpg"),
     url:
       "http://live.cdn.mobifonetv.vn/motv/myhtvcthethao_hls.smil/playlist.m3u8"
   },
   {
     name: "HTV7",
-    img: require("../../assets/img/vtv3.png"),
+    img: require("../../assets/img/htv7.jpg"),
     url: "http://live.cdn.mobifonetv.vn/motv/myhtv7_hls.smil/playlist.m3u8"
   },
   {
     name: "HTV9",
-    img: require("../../assets/img/vtv3.png"),
+    img: require("../../assets/img/htv9.jpg"),
     url: "http://live.cdn.mobifonetv.vn/motv/myhtv9_hls.smil/playlist.m3u8"
   },
   {
     name: "VĨNH LONG 1 HD",
-    img: require("../../assets/img/vtv3.png"),
+    img: require("../../assets/img/thvl1.jpg"),
     url: "http://cdn3.vtcplay.vn:1935/VTC/smil:VinhLong1HD.smil/playlist.m3u8"
   },
   {
     name: "VĨNH LONG 2 HD",
-    img: require("../../assets/img/vtv3.png"),
+    img: require("../../assets/img/thvl2.jpg"),
     url: "http://cdn3.vtcplay.vn:1935/VTC/smil:VinhLong2HD.smil/playlist.m3u8"
   }
 ];

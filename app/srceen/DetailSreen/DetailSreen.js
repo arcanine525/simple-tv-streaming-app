@@ -9,8 +9,8 @@
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View, Dimensions } from "react-native";
 import VideoComponent from "../../components/VideoComponent";
+import Video from "react-native-video";
 
-var { height, width } = Dimensions.get("window");
 export default class DetailScreen extends Component {
   constructor(props) {
     super(props);
@@ -19,9 +19,16 @@ export default class DetailScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={{ width: width, height: height }}>
-          <VideoComponent url={this.props.navigation.state.params.url} />
-        </View>
+        <Video
+          source={{ uri: this.props.navigation.state.params.url }}
+          style={styles.backgroundVideo}
+          muted={false}
+          repeat={true}
+          resizeMode={"contain"}
+          volume={1.0}
+          rate={1.0}
+          ignoreSilentSwitch={"obey"}
+        />
       </View>
     );
   }
@@ -32,6 +39,13 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#F5FCFF"
+    backgroundColor: "black"
+  },
+  backgroundVideo: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0
   }
 });

@@ -1,6 +1,7 @@
 import {
   createStackNavigator,
-  createAppContainer
+  createAppContainer,
+  createDrawerNavigator
 } from "react-navigation";
 import HomeScreen from "../srceen/HomeScreen/HomeScreen";
 import DetailScreen from "../srceen/DetailSreen/DetailSreen";
@@ -19,4 +20,13 @@ const MainStack = createStackNavigator(
   }
 );
 
-export default createAppContainer(MainStack);
+const MyDrawerNavigator = createDrawerNavigator(
+  {
+    DetailScreen: {
+      screen: MainStack
+    }
+  },
+  { contentComponent: HomeScreen }
+);
+
+export default createAppContainer(MyDrawerNavigator);

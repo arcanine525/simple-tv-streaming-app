@@ -23,7 +23,7 @@ import Images from "../../Theme/Image";
 var { height, width } = Dimensions.get("window");
 export default class HomeScreen extends Component {
   render() {
-    console.warn(channels);
+    //console.warn(channels);
     return (
       <View style={styles.container}>
         <FlatList
@@ -52,13 +52,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#F5FCFF"
   },
-
-  instructions: {
-    textAlign: "center",
-    fontSize: 36,
-    color: "#333333",
-    margin: 15
-  },
   item_container: {
     flex: 1,
     alignItems: "center",
@@ -69,6 +62,7 @@ const styles = StyleSheet.create({
   icon: {
     width: 48,
     height: 48,
-    margin: 5
+    margin: 5,
+    resizeMode: "contain"
   }
 });
