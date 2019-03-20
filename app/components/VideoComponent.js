@@ -3,15 +3,13 @@ import PropTypes from "prop-types";
 import { View, StyleSheet, Dimensions } from "react-native";
 import Video from "react-native-video";
 
-var {height, width} = Dimensions.get('window');
+var { height, width } = Dimensions.get("window");
 
 export default class VideoComponent extends React.Component {
   renderVideo() {
-    const url =
-      "http://liverestreamobj.5b1df984.cdnviet.com/hls/VTV3_HD/03.m3u8";
     return (
       <Video
-        source={{ uri: url }}
+        source={{ uri: this.props.url }}
         style={{ width: width, height: height }}
         //style={{ flex : 1}}
         muted={false}
@@ -20,7 +18,6 @@ export default class VideoComponent extends React.Component {
         volume={1.0}
         rate={1.0}
         ignoreSilentSwitch={"obey"}
-        
       />
     );
   }

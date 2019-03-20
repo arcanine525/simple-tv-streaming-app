@@ -8,21 +8,19 @@
 
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View, Dimensions } from "react-native";
-import VideoComponent from "./app/components/VideoComponent";
+import VideoComponent from "../../components/VideoComponent";
 
-const instructions = Platform.select({
-  ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
-  android:
-    "Double tap R on your keyboard to reload,\n" +
-    "Shake or press menu button for dev menu"
-});
 var { height, width } = Dimensions.get("window");
-export default class App extends Component {
+export default class DetailScreen extends Component {
+  constructor(props) {
+    super(props);
+    //const { url } = this.props.navigation.state.params;
+  }
   render() {
     return (
       <View style={styles.container}>
         <View style={{ width: width, height: height }}>
-          <VideoComponent />
+          <VideoComponent url={this.props.navigation.state.params.url} />
         </View>
       </View>
     );
@@ -34,16 +32,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "red"
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: "center",
-    margin: 10
-  },
-  instructions: {
-    textAlign: "center",
-    color: "#333333",
-    marginBottom: 5
+    backgroundColor: "#F5FCFF"
   }
 });

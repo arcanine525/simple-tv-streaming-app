@@ -98,3 +98,5 @@ const channels = [
     url: "http://cdn3.vtcplay.vn:1935/VTC/smil:VinhLong2HD.smil/playlist.m3u8"
   }
 ];
+
+export default channels;
