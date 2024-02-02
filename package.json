@@ -11,7 +11,7 @@
     "react-native": "0.59.0",
     "react-native-gesture-handler": "^1.1.0",
     "react-native-video": "^4.4.0",
-    "react-navigation": "^3.6.1"
+    "react-navigation": "^5.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.3.4",
